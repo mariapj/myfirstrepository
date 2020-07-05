@@ -1,0 +1,116 @@
+body{
+	font-family: italic;
+
+}
+.navbar-brand{
+	background-color: #3e615fe6;
+	padding: 3px;
+	right: 4px;
+	top: 6px;
+}
+.navbar-brand{
+	color:black;
+}
+#bs-example-navbar-collapse-1{
+	margin-top: -50px;
+}
+/*section{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(india-meghalaya.jpg);
+	background-repeat: no-repeat;
+	background-size: 1360px 990px; 
+	margin-top: -138px;
+
+}*/
+.sec{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.87),rgba(0,0,0,0)),url(kashmir.jpg);
+	background-repeat: no-repeat;
+	background-size:1348px 955px; 
+	margin-top: -21px;
+
+}
+.box{
+	font-family: -webkit-pictograph;;
+	font-weight: 40px;
+	color: white;
+	word-spacing: 4px;
+	letter-spacing: 1px;
+margin-left: 733px;max-width: 400px;padding: 86px;box-shadow: 0 5px 15px rgb(0, 0, 0);overflow: hidden;font-size: 50px;margin-top: 40px;background:linear-gradient(to left,#5fd6affc,#030a05d6);
+;opacity: 0.9;
+margin-top: 211px;}
+/*.box button{margin-left:  505px;max-width: 400px;padding: 50px;box-shadow: 0 5px 15px rgba(0,0,0,.5);overflow: hidden;font-size: 15px;margin-top: 40px;background-color: blue;
+margin-top: 211px;
+color: white;}*/
+.box button{
+margin-top: 20px;
+padding: 10px;
+background-color: black;
+color:white;
+position: absolute;
+margin-left: 20px;
+}
+/*.box h1{
+	font-size: 50px;
+}
+
+/*.button{
+	margin-top:-55px;
+	margin-left: 595px;
+	border:none;
+	display: inline-block;
+	font-size: 16px;
+	padding:15px 32px;
+color:black;
+
+}*/
+.para{
+	padding: 10px;
+	margin-left: 20px;
+	font-weight: 12px;
+	font-size: 20px;
+	margin-right: 20px;
+
+}
+
+/* p{
+	margin-left: 10px;
+
+	font-size:20px;
+	width:200px;
+	height:200px;
+	font-weight: 15px;
+}
+/*.input{
+	border:none;
+	display: inline-block;
+	font-size: 16px;
+	padding:15px 32px;
+}*/
+.grp .more{
+	float: left;
+	position: relative;
+	width:33.3%;
+	padding:50px;
+	
+	box-sizing: border-box;
+	color: white;
+	 background:linear-gradient(to bottom,#1b211dbf,#8ef3b240);
+
+
+}
+.grp{
+	background-color:#6bd0af;
+  position: relative;
+  width:100%;
+  display: inline-block;
+  margin-top: 50px;
+  
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="homepage.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body onload="login()" >
+  <div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Easy Go</a>
+    </div>
+    <ul class="nav navbar-nav">
+      
+      <li class="disabled"><a href="about.html">Home</a></li>
+      <li class="disabled"><a href="location.html">Guide</a></li>
+      <li class="disabled"><a href="#">Contact</a></li>
+    </ul>
+  </div>
+   
+</nav>
+
+<p style="color: #f5e8e8cc;">Let us plan your holiday!!!</p>
+
+
+<div>
+	<div class="form-box">
+		<div class="button-box">
+			<div id="btn"></div>
+			<button type="button" class="toggle-btn" onclick="login()"><a href="location.html">Log In</a></button>
+			<button type="button" class="toggle-btn" onclick="register()"><a href="location.html">Register</a></button>
+		</div>
+		 <form action="LoginServlet" method="post"  id="login" class="input-group">
+<input type="text" class="input-field" placeholder="User Id" name="emailAddress" required>
+<input type="text" class="input-field" placeholder="Enter Password"  name="password" required>
+<input type="checkbox" class="checkbox" ><span>Rememeber Password</span>
+<button type="submit " class="submit-btn" name="submit">Log In</button>
+</form>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">LogIn</h5>
+            <button type="button" class="close" data-dismiss="modal"
+              aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="alert alert-danger">
+              <strong>Invalid Credentials!</strong> Please enter valid details
+              to login.
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary main_menu_bg"
+              data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+<form id="register" class="input-group1" action="RegistrationServlet">
+	<input type="text" class="input-field" name="Name" placeholder="Name">
+<input type="email" class="input-field" placeholder="Email Id" name="emailAddress" required>
+<input type="text" class="input-field" placeholder="Enter Password"  name="password" required>
+<input id="mobile" name="mobile" type="text" placeholder="Where we can contact You"
+          required="required" class="input-field">
+<input type="checkbox" class="checkbox" ><span>I agree to the terms & conditions</span>
+<button type="submit " class="submit-btn" name="submit">Register</button>
+</form>		
+		
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	var x=document.getElementById("login");
+	var y=document.getElementById("register");
+	var z=document.getElementById("btn");
+
+function register(){
+	x.style.left ="-400px";
+	y.style.left="50px";
+	z.style.left="110px";
+}function login(){
+	x.style.left ="50px";
+	y.style.left="450px";
+	z.style.left="0px";
+}
+</script>
+
+
+</body>
+</html>
